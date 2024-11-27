@@ -103,7 +103,6 @@ module.exports.babelOptions = ({
         shippedProposals: true,
       },
     ],
-    "@babel/preset-typescript",
   ],
   plugins: [
     [
@@ -142,10 +141,10 @@ module.exports.babelOptions = ({
     ],
     // Transpile decorators (still in TC39 process)
     // Modern browsers support class fields and private methods, but transform is required with the older decorator version dictated by Lit
-    [
-      "@babel/plugin-proposal-decorators",
-      { version: "2018-09", decoratorsBeforeExport: true },
-    ],
+    // [
+    //   "@babel/plugin-proposal-decorators",
+    //   { version: "2018-09", decoratorsBeforeExport: true },
+    // ],
     "@babel/plugin-transform-class-properties",
     "@babel/plugin-transform-private-methods",
   ].filter(Boolean),
