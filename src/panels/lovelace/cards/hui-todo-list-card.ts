@@ -1,6 +1,6 @@
 import "@material/mwc-list/mwc-list";
-import type { ActionDetail } from "@material/mwc-list/mwc-list-foundation";
 import type { List } from "@material/mwc-list/mwc-list";
+import type { ActionDetail } from "@material/mwc-list/mwc-list-foundation";
 import {
   mdiClock,
   mdiDelete,
@@ -19,8 +19,8 @@ import { classMap } from "lit/directives/class-map";
 import { repeat } from "lit/directives/repeat";
 import memoizeOne from "memoize-one";
 import { applyThemesOnElement } from "../../../common/dom/apply_themes_on_element";
-import { supportsFeature } from "../../../common/entity/supports-feature";
 import { stopPropagation } from "../../../common/dom/stop_propagation";
+import { supportsFeature } from "../../../common/entity/supports-feature";
 import { caseInsensitiveStringCompare } from "../../../common/string/compare";
 import "../../../components/ha-card";
 import "../../../components/ha-check-list-item";
@@ -39,12 +39,12 @@ import type { TodoItem } from "../../../data/todo";
 import {
   TodoItemStatus,
   TodoListEntityFeature,
+  TodoSortMode,
   createItem,
   deleteItems,
   moveItem,
   subscribeItems,
   updateItem,
-  TodoSortMode,
 } from "../../../data/todo";
 import { showConfirmationDialog } from "../../../dialogs/generic/show-dialog-box";
 import type { HomeAssistant } from "../../../types";
